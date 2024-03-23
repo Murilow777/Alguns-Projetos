@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+  
+  
+  public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    int nota;
+    System.out.println("Coloque uma nota de 0 a 10: ");
+    nota = teclado.nextInt();
+    while (nota < 0 || nota > 10) {
+      System.out.println("Nota inválida, digite novamente: ");
+      nota = teclado.nextInt();
+    }
+    if (nota >0 && nota < 10) {
+      System.out.println("Nota válida");
+    }
+    
+  }
+
+}
