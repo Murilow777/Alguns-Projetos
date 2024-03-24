@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+  
+  
+  public static void main(String[] args) {
+    
+    Scanner teclado = new Scanner(System.in);
+    char user, senha;
+    System.out.println("Coloque seu usuário: ");
+    user = teclado.nextLine().charAt(0);
+    System.out.println("Coloque sua senha: ");
+    senha = teclado.nextLine().charAt(0);
+    while (senha == user) {
+      System.out.println("Senha inválida. Evite senhas iguais ao usuário: ");
+      senha = teclado.nextLine().charAt(0);
+    }
+    if (senha != senha) {
+      System.out.println("Usuário registrado com sucesso!");
+    }
+    
+  }
+
+}
